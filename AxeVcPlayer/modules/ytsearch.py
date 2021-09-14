@@ -27,7 +27,6 @@ async def ytsearch(_, message: Message):
         results = YoutubeSearch(query, max_results=1).to_dict()
         i = 0
         text = ""
-        while i += 1
         await m.edit(text, disable_web_page_preview=True)
     except Exception as e:
         await message.reply_text(str(e))
